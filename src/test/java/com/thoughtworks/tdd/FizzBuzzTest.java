@@ -66,5 +66,14 @@ public class FizzBuzzTest {
         assertThat(result, is("Buzz"));
     }
 
-    
+    @Test
+    public void should_return_Buzz_when_convert_given_15(){
+        //given
+        int input = 15;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.convert(input);
+        assertThat(result, is("FizzBuzz"));
+    }
+
 }
